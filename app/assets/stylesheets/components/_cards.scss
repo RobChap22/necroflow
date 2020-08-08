@@ -1,34 +1,4 @@
 
-a {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-decoration: none;
-}
-
-a:link {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-decoration: none;
-}
-
-a:visited {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-decoration: none;
-}
-
-a:active {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-decoration: none;
-}
-
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -42,10 +12,6 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $blue;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border: 2px solid $navy;
   border-radius: 1.5rem;
   // box-shadow: 0 0 1px white, 0 0 8px $pink, 0 0 16px $teal, 0 0 32px $purple;
@@ -61,6 +27,21 @@ a:active {
     inset 0 0 0.5vw  0.2vw #fff7f7;
   }
 }
+
+.card-category a {
+  font-family: 'Major Mono Display', monospace;
+  color: $teal;
+  font-size: 24px;
+  text-shadow: 0 0 1px white, 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
+}
+
+.card-category a:hover {
+  transition: 1s;
+  color: $teal;
+  text-decoration: none;
+  text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 16px $purple;
+}
+
 
 
 // Smallest device

@@ -2,7 +2,7 @@
   <div class="cards mt-5">
     <% @gangs.each do |gang| %>
       <div class="card-category">
-        <p><%= link_to gang.name.upcase, gang_path(gang) %></p>
+        <%= link_to gang.name.upcase, gang_path(gang) %>
       </div>
     <% end %>
     </div>

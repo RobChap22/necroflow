@@ -17,9 +17,7 @@
 }
 
 .navbar h1 {
-  font-family:'Allerta Stencil', "sans-serif";
-  color: white;
-  text-shadow:
-    0 0 16px $pink,
-    0 0 24px $teal;
+  font-family: 'Major Mono Display', monospace;
+  color: $teal;
+  text-shadow: 0 0 1px white, 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
 }
