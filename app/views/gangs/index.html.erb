@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="col">
+    <% @gangs.each do |gang| %>
+      <p><%= link_to gang.name, gang_path(gang) %></p>
+    <% end %>
+  </div>
+</div>
