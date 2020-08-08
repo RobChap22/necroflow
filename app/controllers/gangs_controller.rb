@@ -5,6 +5,5 @@ class GangsController < ApplicationController
 
   def show
     @gang = Gang.find(params[:id])
-    raise
   end
 end

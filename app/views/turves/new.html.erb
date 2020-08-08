@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="col">
+    <h2><%= "#{@gang.name} gains new turf:" %></h2>
+    <%= simple_form_for [@gang, @turf] do |f| %>
+      <%= f.association :territories, collection: @territories %>
+      <%= f.submit class: 'btn btn-danger' %>
+    <% end %>
+  </div>
+</div>
