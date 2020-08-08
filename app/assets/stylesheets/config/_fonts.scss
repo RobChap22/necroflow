@@ -1,20 +1,22 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$headers-font: 'Allerta Stencil', "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
-@font-face {
-  font-family: "Neon";
-  src: font-url('hellodenverdisplayregular_v1.6.ttf');
-  src: font-url('hellodenverdisplayregular_v1.6.ttf') format('truetype')
-}
-$my-font: "Neon";
+// @font-face {
+//     font-family: 'sportropregular';
+//     src: url('sportrop-webfont.woff2') format('woff2'),
+//          url('sportrop-webfont.woff') format('woff');
+// }
+// $my-font: "sportropregular";
 
 
 // @font-face {
 //   font-family: neon;
 //   src: url(hellodenverdisplayregular_v1.6.ttf);
 // }
+
+// font-family: 'Allerta Stencil', sans-serif;

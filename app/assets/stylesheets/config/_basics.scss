@@ -6,30 +6,35 @@ body {
     // background: linear-gradient(90deg, $purple 10%, $pink 90%);
     background-image: url(https://cdn.hipwallpaper.com/i/15/20/QTAMaV.jpg);
     background-size: auto 100%;
+    // font-family: $headers-font;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  transition: 5s;
-}
+// a {
+//   font-family: $headers-font;
+//   color: white;
+//   text-decoration: none;
+// }
 
-a:visited {
-  color: white;
-}
+// a:visited {
+//   font-family: $headers-font;
+//   color: white;
+// }
 
-a:active {
-  color: white;
-}
+// a:active {
+//   color: white;
+//   font-family: $headers-font;
+// }
 
-a:link {
-  color: white;
-}
+// a:link {
+//   color: white;
+//   font-family: $headers-font;
+// }
 
-a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
+// a:hover {
+//   font-family: $headers-font;
+//   color: white !important;
+//   text-decoration: none !important;
+// }
 
 .neon-text {
   font-size: 24px;

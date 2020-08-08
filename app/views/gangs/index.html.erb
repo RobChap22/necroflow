@@ -1,8 +1,8 @@
 <div class="container">
   <div class="cards mt-5">
     <% @gangs.each do |gang| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        <p><%= link_to gang.name, gang_path(gang) %></p>
+      <div class="card-category">
+        <p><%= link_to gang.name.upcase, gang_path(gang) %></p>
       </div>
     <% end %>
     </div>
