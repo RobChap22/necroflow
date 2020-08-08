@@ -1,6 +1,12 @@
 <div class="container">
   <div class="col">
     <h1><%= @gang.name %></h1>
-    <%= link_to 'Add Territory', new_gang_turf_path(@gang) %>
+    <% @territories.each do |territory| %>
+      <p><%= territory.name %></p>
+    <% end %>
+    <p><%= link_to 'Add Territory', new_gang_turf_path(@gang) %></p>
+    <%= link_to gangs_path do %>
+      <i class="fas fa-angle-double-left"></i>
+    <% end %>
   </div>
 </div>

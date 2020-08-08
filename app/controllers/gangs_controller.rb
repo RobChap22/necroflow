@@ -5,5 +5,6 @@ class GangsController < ApplicationController
 
   def show
     @gang = Gang.find(params[:id])
+    @territories = @gang.territories.all
   end
 end
