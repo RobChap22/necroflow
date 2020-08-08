@@ -30,14 +30,14 @@ ActiveRecord::Schema.define(version: 2020_08_08_080218) do
   end
 
   create_table "turves", force: :cascade do |t|
-    t.bigint "gangs_id", null: false
-    t.bigint "territories_id", null: false
+    t.bigint "gang_id", null: false
+    t.bigint "territory_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["gangs_id"], name: "index_turves_on_gangs_id"
-    t.index ["territories_id"], name: "index_turves_on_territories_id"
+    t.index ["gang_id"], name: "index_turves_on_gang_id"
+    t.index ["territory_id"], name: "index_turves_on_territory_id"
   end
 
-  add_foreign_key "turves", "gangs", column: "gangs_id"
-  add_foreign_key "turves", "territories", column: "territories_id"
+  add_foreign_key "turves", "gangs"
+  add_foreign_key "turves", "territories"
 end

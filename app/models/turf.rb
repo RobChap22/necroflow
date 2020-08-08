@@ -1,4 +1,5 @@
 class Turf < ApplicationRecord
-  belongs_to :gangs
-  belongs_to :territories
+  belongs_to :gang
+  belongs_to :territory
+  validates :gang, uniqueness: { scope: :territory }
 end
