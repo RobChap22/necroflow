@@ -1,23 +1,41 @@
 
 .navbar {
-  border-bottom: 3px solid $navy;
+  border-bottom: 2px solid $navy;
+  padding: 16px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
   overflow: hidden;
+  transition: 1s;
   &:hover {
-    transition: 1s;
-    border-bottom: 0px solid white;
+    border-bottom: 2px solid $white;
     box-shadow:
-    0 0 0.1vw  0.4vw #fff7f7,
-    0 0 0.4vw  0.6vw #e97272,
-    0 0   4vw  0.4vw #e50b0b,
-    inset 0 0 1.5vw  0.4vw #e50b0b,
-    inset 0 0 0.4vw  0.2vw #e97272,
-    inset 0 0 0.5vw  0.2vw #fff7f7;
+    0 0 0.4vw  0.6vw $pink,
+    0 0   4vw  0.4vw $purple;
+    // inset 0 0 1.5vw  0.4vw $purple,
+    // inset 0 0 0.4vw  0.2vw $pink;
   }
 }
 
-.navbar h1 {
+.navbar a {
   font-family: 'Major Mono Display', monospace;
   color: $teal;
-  text-shadow: 0 0 1px white, 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
+  text-decoration: none;
+  text-shadow: 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
 }
+
+.navbar-add a {
+  color: $teal;
+  font-size: 24px;
+  text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 24px $purple;
+  // text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 16px $purple;
+  transition: 0.5s;
+}
+
+.navbar-add a:hover {
+  // transition: 1s;
+  text-decoration: none;
+  text-shadow: 0 0 24px $teal, 0 0 32px $purple;
+}
+
+
+// text shadow
+// 0 0 1px $white,

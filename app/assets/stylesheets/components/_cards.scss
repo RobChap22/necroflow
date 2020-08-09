@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani:wght@500&display=swap');
+
+// font-family: 'Major Mono Display', monospace;
+// font-family: 'Rajdhani', sans-serif;
+
 
 .cards {
   display: grid;
@@ -15,16 +20,20 @@
   border: 2px solid $navy;
   border-radius: 1.5rem;
   // box-shadow: 0 0 1px white, 0 0 8px $pink, 0 0 16px $teal, 0 0 32px $purple;
+  transition: 1s;
   &:hover {
-    transition: 1s;
-    border: 0px solid $navy;
+    border: 2px solid $white;
     box-shadow:
-    0 0 0.1vw  0.4vw #fff7f7,
-    0 0 0.4vw  0.6vw #e97272,
-    0 0   4vw  0.4vw #e50b0b,
-    inset 0 0 1.5vw  0.4vw #e50b0b,
-    inset 0 0 0.4vw  0.2vw #e97272,
-    inset 0 0 0.5vw  0.2vw #fff7f7;
+    // 0 0 0.1vw  0.4vw #fff7f7,
+    // 0 0 0.4vw  0.6vw #e97272,
+    // 0 0   4vw  0.4vw #e50b0b,
+    // inset 0 0 1.5vw  0.4vw #e50b0b,
+    // inset 0 0 0.4vw  0.2vw #e97272,
+    // inset 0 0 0.5vw  0.2vw #fff7f7;
+    0 0 0.4vw  0.6vw $pink,
+    0 0   4vw  0.4vw $purple,
+    inset 0 0 1.5vw  0.4vw $purple,
+    inset 0 0 0.4vw  0.2vw $pink;
   }
 }
 
@@ -32,14 +41,64 @@
   font-family: 'Major Mono Display', monospace;
   color: $teal;
   font-size: 24px;
-  text-shadow: 0 0 1px white, 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
+  text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 24px $purple;
+  // text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 16px $purple;
+  transition: 1s;
 }
 
 .card-category a:hover {
-  transition: 1s;
-  color: $teal;
+  // transition: 1s;
   text-decoration: none;
-  text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 16px $purple;
+  text-shadow: 0 0 24px $teal, 0 0 32px $purple;
+}
+
+.card-show {
+  justify-content: center;
+  align-items: center;
+  background-color: $navy;
+  border-radius: 1.5rem;
+  border: 2px solid $navy;
+  width: 50;
+  font-family: 'Rajdhani', sans-serif;
+  color: $teal;
+  text-shadow: 0 0 2px $navy, 0 0 4px $pink;
+  padding: 18px;
+  box-shadow:
+    0 0 0.4vw  0.6vw $pink,
+    0 0   4vw  0.4vw $purple;
+}
+
+.card-show h1 {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+}
+
+.card-show a {
+  color: $teal;
+  font-size: 24px;
+  text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 24px $purple;
+  // text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 16px $purple;
+  transition: 0.5s;
+}
+
+.card-show a:hover {
+  // transition: 1s;
+  text-decoration: none;
+  text-shadow: 0 0 24px $teal, 0 0 32px $purple;
+}
+
+.card-show-body {
+  display: flex;
+}
+
+.card-show-territories {
+  font-size: 24px;
+  padding-left: 16px;
+}
+
+.card-show-icons {
+  display: flex;
+  justify-content: space-between;
 }
 
 

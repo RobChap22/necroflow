@@ -1,0 +1,10 @@
+<div class="containter w-50">
+  <div class="col">
+    <div class="form-neon mt-5">
+      <%= simple_form_for @gang do |f| %>
+        <%= f.input :name %>
+        <%= f.submit 'Update', :input_html => { class: 'neon-button' } %>
+      <% end %>
+    </div>
+  </div>
+</div>

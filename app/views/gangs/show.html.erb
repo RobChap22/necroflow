@@ -1,12 +1,29 @@
-<div class="container">
+<div class="container w-50">
   <div class="col">
-    <h1><%= @gang.name %></h1>
-    <% @territories.each do |territory| %>
-      <p><%= territory.name %></p>
-    <% end %>
-    <p><%= link_to 'Add Territory', new_gang_turf_path(@gang) %></p>
-    <%= link_to gangs_path do %>
-      <i class="fas fa-angle-double-left"></i>
-    <% end %>
+    <div class="card-show mt-5">
+      <h1><%= @gang.name %></h1>
+      <div class="card-show-body">
+        <div class="card-show-territories">
+          <% @territories.each do |territory| %>
+            <p><%= territory.name %></p>
+          <% end %>
+          <p><%= link_to new_gang_turf_path(@gang) do %>
+              <i class="fas fa-plus"></i>
+            <% end %>
+          </p>
+        </div>
+      </div>
+      <div class="card-show-icons">
+        <%= link_to gangs_path do %>
+          <i class="fas fa-backward"></i>
+        <% end %>
+        <%= link_to edit_gang_path(@gang) do %>
+          <i class="fas fa-edit"></i>
+        <% end %>
+        <%= link_to gang_path(@gang), method: :delete, data: { confirm: "Are you sure you want to delete this gang?" } do %>
+          <i class="fas fa-skull"></i>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

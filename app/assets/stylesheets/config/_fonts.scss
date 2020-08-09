@@ -1,11 +1,14 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani:wght@500&display=swap');
+
+font-family: 'Major Mono Display', monospace;
+font-family: 'Rajdhani', sans-serif;
+
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: 'Allerta Stencil', "sans-serif";
 
-font-family: 'Major Mono Display', monospace;
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
