@@ -14,6 +14,16 @@
   <body>
     <div class="navbar navbar-transparent">
       <h1 id="navbar-title"><%= link_to "NecroFlow", gangs_path %></h1>
+      <p class="navbar-text float-right">
+        <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+        <% end %>
+      </p>
       <div class="navbar-add mx-3">
         <%= link_to new_gang_path do %>
           <i class="fas fa-plus"></i>
@@ -21,7 +31,12 @@
       </div>
     </div>
 
-
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

@@ -1,6 +1,6 @@
 class GangsController < ApplicationController
   def index
-    @gangs = Gang.all
+    @gangs = Gang.where(user: current_user)
   end
 
   def show
