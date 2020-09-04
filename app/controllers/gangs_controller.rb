@@ -1,6 +1,6 @@
 class GangsController < ApplicationController
   def index
-    @gangs = Gang.all
+    @gangs = Gang.where(user: current_user)
   end
 
   def show
@@ -14,6 +14,7 @@ class GangsController < ApplicationController
 
   def create
     @gang = Gang.new(gang_params)
+    @gang.user = current_user
     if @gang.save
       redirect_to gang_path(@gang)
     else
@@ -45,6 +46,6 @@ class GangsController < ApplicationController
   private
 
   def gang_params
-    params.require(:gang).permit(:name)
+    params.require(:gang).permit(:name, :user)
   end
 end

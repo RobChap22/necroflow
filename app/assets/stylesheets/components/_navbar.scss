@@ -1,7 +1,7 @@
 
 .navbar {
   border-bottom: 2px solid $navy;
-  padding: 16px;
+  // padding: 16px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
   overflow: hidden;
   transition: 1s;
@@ -22,7 +22,7 @@
   text-shadow: 0 0 16px $pink, 0 0 24px $teal, 0 0 32px $purple;
 }
 
-.navbar-add a {
+.navbar-icon a {
   color: $teal;
   font-size: 24px;
   text-shadow: 0 0 8px $pink, 0 0 16px $teal, 0 0 24px $purple;
@@ -30,7 +30,7 @@
   transition: 0.5s;
 }
 
-.navbar-add a:hover {
+.navbar-icon a:hover {
   // transition: 1s;
   text-decoration: none;
   text-shadow: 0 0 24px $teal, 0 0 32px $purple;
