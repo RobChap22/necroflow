@@ -12,7 +12,29 @@
             <% end %>
           </p>
         </div>
-        <%= image_tag "orlock.png" %>
+        <% if @gang.house == "Cawdor" %>
+          <%= image_tag "cawdor.png" %>
+        <% elsif @gang.house == "Chaos Helots" %>
+          <%= image_tag "helots.png" %>
+        <% elsif @gang.house == "Corpse Grinders" %>
+          <%= image_tag "grinders.png" %>
+        <% elsif @gang.house == "Delaque" %>
+          <%= image_tag "delaque.png" %>
+        <% elsif @gang.house == "Escher" %>
+          <%= image_tag "escher.png" %>
+        <% elsif @gang.house == "Genestealer Cult" %>
+          <%= image_tag "gsc.png" %>
+        <% elsif @gang.house == "Goliath" %>
+          <%= image_tag "goliath.png" %>
+        <% elsif @gang.house == "Orlock" %>
+          <%= image_tag "orlock.png" %>
+        <% elsif @gang.house == "Palanite Enforcers" %>
+          <%= image_tag "enforcers.png" %>
+        <% elsif @gang.house == "Van Saar" %>
+          <%= image_tag "vansaar.png" %>
+        <% else %>
+          <%= image_tag "other.png" %>
+        <% end %>
       </div>
       <div class="card-show-icons">
         <%= link_to gangs_path do %>

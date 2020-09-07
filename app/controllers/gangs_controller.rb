@@ -30,6 +30,7 @@ class GangsController < ApplicationController
     @gang = Gang.find(params[:id])
     # raise
     @gang.name = gang_params[:name]
+    @gang.house = gang_params[:house]
     if @gang.save
       redirect_to gang_path(@gang)
     else
@@ -46,6 +47,6 @@ class GangsController < ApplicationController
   private
 
   def gang_params
-    params.require(:gang).permit(:name, :user)
+    params.require(:gang).permit(:name, :user, :house)
   end
 end
