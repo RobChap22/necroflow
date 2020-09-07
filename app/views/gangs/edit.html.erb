@@ -1,10 +1,13 @@
-<div class="containter w-50">
-  <div class="col">
-    <div class="form-neon mt-5">
-      <%= simple_form_for @gang do |f| %>
-        <%= f.input :name %>
-        <%= f.submit 'Update', :input_html => { class: 'neon-button' } %>
-      <% end %>
+<div class="containter">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <div class="form-neon mt-5">
+        <%= simple_form_for @gang do |f| %>
+          <%= f.input :name %>
+          <%= f.input :house, collection: ["Cawdor", "Chaos Helots", "Corpse Grinders", "Delaque", "Escher", "Genestealer Cult", "Goliath", "Orlock", "Palanite Enforcers", "Slave Ogryn", "Van Saar", "Venators", "Other"] %>
+          <%= f.submit 'Update', :input_html => { class: 'neon-button' } %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

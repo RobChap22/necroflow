@@ -4,6 +4,7 @@
       <div class="form-neon mt-5">
         <%= simple_form_for @gang do |f| %>
           <%= f.input :name %>
+          <%= f.input :house, collection: ["Cawdor", "Chaos Helots", "Corpse Grinders", "Delaque", "Escher", "Genestealer Cult", "Goliath", "Orlock", "Palanite Enforcers", "Slave Ogryn", "Van Saar", "Venators", "Other"] %>
           <%= f.button :submit, 'Create', class: 'neon-button' %>
         <% end %>
       </div>

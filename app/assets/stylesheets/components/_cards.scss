@@ -88,6 +88,10 @@
 
 .card-show-body {
   display: flex;
+  justify-content: space-between;
+}
+.card-show-body img {
+  width: 200px;
 }
 
 .card-show-territories {
