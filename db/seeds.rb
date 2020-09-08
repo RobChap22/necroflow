@@ -1,13 +1,6 @@
 puts "Cleaning gangs..."
 Gang.destroy_all
-
-puts "Creating gangs..."
-5.times do
-  Gang.create!(
-    name: Faker::Kpop.iii_groups
-  )
-end
-puts "Gangs finished!"
+puts "Gangs cleaned!"
 
 puts "Cleaning territories..."
 Territory.destroy_all
